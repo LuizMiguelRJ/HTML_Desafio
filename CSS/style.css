@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    margin-top: 100px;
+    width: 1024px;
+    height: 576px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: white;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4);
+}
+
+#video {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.control {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+.buttons {
+    width: 40px;
+    position: relative;
+    top: 100%;
+    transform: translateY(-120%);
+    padding-left: 50px;
+    opacity: 0.2;
+    transition: 0.2s;
+}
+
+.buttons:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.buttons:active {
+    transition: 0s;
+    width: 45px;
+}
